@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Читалка</string>
+
+    <string name="open_file">Открыть файл</string>
+    <string name="open_file_desc">Выбрать текстовый файл или книгу FB2</string>
+    <string name="loading">Чтение файла…</string>
+
+    <string name="empty_title">Файл не открыт</string>
+    <string name="empty_subtitle">Нажмите «Открыть файл» и выберите документ в формате .txt или .fb2 — он появится здесь.</string>
+
+    <string name="no_file">Файл не выбран</string>
+    <string name="error_title">Не удалось открыть файл</string>
+
+    <string name="font_smaller">Уменьшить шрифт</string>
+    <string name="font_larger">Увеличить шрифт</string>
+    <string name="font_smaller_label">A−</string>
+    <string name="font_larger_label">A+</string>
+</resources>
