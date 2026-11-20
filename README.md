@@ -6,6 +6,10 @@
 **Стек:** Kotlin · Material 3 · ViewBinding · minSdk 24 · targetSdk 36 · без сторонних библиотек
 (только AndroidX и Material Components).
 
+> **Нужно просто проверить, как работает?** Скачайте готовый APK со страницы
+> [**Releases**](https://github.com/kasimovs687/android-reader/releases/latest) — устанавливается
+> на любой телефон с Android 7.0+, Android Studio не понадобится.
+
 <p align="center">
   <img src="screenshots/03_txt.png" width="300" alt="Чтение текста">
 </p>
@@ -68,18 +72,26 @@
 
 ---
 
-## Как собрать
+## Как запустить
 
-> ⚠️ **Важно:** папку проекта нельзя держать в пути с кириллицей
+### Вариант 1. Просто установить приложение (Android Studio не нужна)
+
+1. Открыть страницу [**Releases**](https://github.com/kasimovs687/android-reader/releases/latest)
+   и скачать `Reader-debug.apk`.
+   Прямая ссылка:
+   `https://github.com/kasimovs687/android-reader/releases/latest/download/Reader-debug.apk`
+2. Открыть файл на телефоне (Android 7.0 и новее) и разрешить установку из неизвестного источника.
+
+### Вариант 2. Собрать из исходников
+
+> ⚠️ **Важно:** путь к папке проекта не должен содержать кириллицу
 > (`C:\Users\...\Рабочий стол\Читалка`). Сборщик Android на Windows падает с ошибкой
 > «Your project path contains non-ASCII characters».
 
-### Android Studio
-1. `File → Open` → выбрать папку проекта.
-2. Дождаться синхронизации Gradle.
-3. `Run ▶` на устройстве или эмуляторе.
+**Android Studio:** `File → Open` → папка проекта → дождаться Gradle Sync
+(первый раз нужен интернет, скачиваются зависимости) → `Run ▶`.
 
-### Командная строка
+**Командная строка:**
 ```bash
 ./gradlew assembleDebug
 # готовый APK: app/build/outputs/apk/debug/app-debug.apk
@@ -90,7 +102,7 @@
 adb install -r APK/Reader-debug.apk
 ```
 
-Собранный APK уже лежит в папке [`APK`](APK).
+Собранный APK также лежит в папке [`APK`](APK).
 
 ---
 
